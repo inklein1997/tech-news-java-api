@@ -133,4 +133,19 @@ public class Post {
     public int hashCode() {
         return Objects.hash(id, title, postUrl, userName, voteCount, userId, postedAt, updatedAt, comments);
     }
+
+    @Override
+    public String toString() {
+        return "Post{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", postUrl='" + postUrl + '\'' +
+                ", userName='" + userName + '\'' +
+                ", voteCount=" + voteCount +
+                ", userId=" + userId +
+                ", postedAt=" + postedAt +
+                ", updatedAt=" + updatedAt +
+                ", comments=" + comments +
+                '}';
+    }
 }
